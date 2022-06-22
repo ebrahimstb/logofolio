@@ -1,0 +1,117 @@
+body{
+     background-color: rgb(253, 253, 253); 
+    background-image: linear-gradient(#191A19, #112916, #172b13);
+    /* gradient: ;
+    margin-top: 7%;
+    margin-bottom: 5%; */
+}
+.navbar{
+    background: #191A19 !important;
+}
+.folio{
+    margin-left: 500px;
+    font-size: 2.1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(19, 160, 38);
+    font-weight: bolder;
+}
+.folio:hover{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: green;
+    background: rgb(182, 253, 196);
+    border-radius: 10px;
+    height: 50px;
+    /* width: 900px; */
+    margin-left: 500px;
+    transition: 0.5s ease-in-out all;
+}
+.nav-link{
+    font-weight: bolder !important;
+}
+.card{
+    position: relative;
+}
+
+.card:hover{
+    /* transform: skew(-30deg); */
+    transform: translateY(-17px);
+    transition: 0.3s ease-in-out all;
+ }
+
+.card-img1{
+     height: 50%;
+    width: 50%; 
+    justify-content: center;
+    margin-left: 300px;
+}
+
+.card-body{
+    /* height: 70px !important; */
+    text-align: center !important;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(0, 0, 0);
+    }
+}
+
+footer{
+    justify-content: center;
+}
+
+footer h2{
+    color: whitesmoke;
+    text-align: center;
+}
+footer a{
+    display: flex;
+    flex-direction: row !important;
+    color: wheat;
+    justify-content: center;
+    padding: 10px;
+}
+li{
+    color: white;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cr{
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+
+img{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.content{
+    color: white;
+    position: absolute;
+    inset: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.437);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+img:hover.blur{
+    filter: blur(15px);
+}
+
+.card > .content.slide-left{
+    transform: translateX(-100%);
+}
+.card:hover > .content.slide-left{
+    transform: translateX(0);
+    transition: 0.5s ease-in-out;
+}
